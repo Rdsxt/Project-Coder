@@ -1,0 +1,30 @@
+
+/*  Corpo da página  */
+.main__section__title{
+  grid-area: section_title;
+  background-image: url(../images/architecture.jpg);
+  height: 500px;
+  width: 100vw;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.main__section__title{
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 3em;
+  font-family: "Oxygen" Arial, Helvetica, sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: left; 
+}
+
+.form{
+  margin: 20px;
+  padding: 20px;
+}
+
+label, input{
+  margin-top: 15px;
+}

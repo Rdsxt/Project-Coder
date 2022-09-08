@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../css/styles_global_resp.css">
+    <link rel="stylesheet" href="../css/contato.css">
+
+    <title>Contato</title>
+</head>
+<body>
+    <div id="container__grid">
+    
+        <header class="container__header">
+          <h1 class="header__title">Inspcom</h1>
+          <nav class="header__nav">
+              <ul>
+                  <li><a href="../index.html" class="header__nav__link"> Home </a></li>
+                  <li><a href="../pages/contato.html" class="header__nav__link"> Contato </a></li>
+                  <li><a href="../pages/projetos.html" class="header__nav__link"> Projetos </a></li>
+                  <li><a href="../pages/quem_somos.html" class="header__nav__link"> Quem somos </a></li>
+                  <li><a href="../pages/servicos.html" class="header__nav__link"> Serviços </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main__section">
+            Contato
+        </div>
+
+        <div class="form">
+            <form action="GET">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome"><br>
+            <label for="email">e-mail:</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail"><br>
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" placeholder="Telefone"><br><br>
+            <label> Como você deseja ser contactado:</label><br>
+            <label>E-mail:</label>
+            <input type="radio" nome="radContato" value="email">
+            <label>Telefone:</label>
+            <input type="radio" name="radContato" value="telefone"><br>
+            <p>Qual tipo de serviços deseja mais informações:</p>
+            <select name="atividade">
+                <option value="inspecao">Inspeção Técnica</option>
+                <option value="comissionamento">Comissionamento</option>
+            </select><br><br>
+            <label> Deseja receber o Newsletter </label>
+            <input type="checkbox" name="aceita" value="1"><br><br>
+            <label for="comentarios"> Tire suas dúvidas: </label><br>
+            <textarea name="comentarios" id="" cols="30" rows="10"></textarea><br>
+            <input type="reset" value="Limpar Formulário">
+            <input type="submit" value="Enviar Formulário">
+            </form>  
+        </div>
+
+        <footer class="footer">
+            <p>Site criado pelo grupo Mauro, Rodrigo e Manoel - 2022</p>
+        </footer>
+    </div>
+</body>
+</html>
