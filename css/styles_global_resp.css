@@ -220,7 +220,7 @@ body{
 .main__article{
   display: flex;
   flex-wrap: wrap;
- 
+  justify-content: center;
 }
 
 .main__article p{
