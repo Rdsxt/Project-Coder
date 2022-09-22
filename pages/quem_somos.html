@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="../css/styles_global_resp.css">
@@ -12,41 +15,91 @@
 
     <title>Quem somos</title>
 </head>
-<body>
-    <div id="container__grid">
-    
-        <header class="container__header">
-          <h1 class="header__title">Inspcom</h1>
-          <nav class="header__nav">
-              <ul>
-                  <li><a href="../index.html" class="header__nav__link"> Home </a></li>
-                  <li><a href="../pages/contato.html" class="header__nav__link"> Contato </a></li>
-                  <li><a href="../pages/projetos.html" class="header__nav__link"> Projetos </a></li>
-                  <li><a href="../pages/quem_somos.html" class="header__nav__link"> Quem somos </a></li>
-                  <li><a href="../pages/servicos.html" class="header__nav__link"> Serviços </a></li>
-                </ul>
+<body id="container__grid">
+        <!-- Tag menu hamburguer começa aqui -->
+        <header id="container__header">
+            <nav class="navbar navbar-expand-xl fixed-top header__nav">
+              <div class="container-fluid">
+                <h1 class="header__title">Inspcom</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inspcom</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a href="../index.html" class="nav-link active header__nav__link"> Home </a>  
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a href="contato.html" class="nav-link header__nav__link"> Contato </a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a href="projetos.html" class="nav-link header__nav__link"> Projetos </a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a href="quem_somos.html" class="nav-link header__nav__link"> Quem somos </a>
+                      </li>
+          
+                      <li class="nav-item">
+                        <a href="servicos.html" class="nav-link header__nav__link"> Serviços </a>
+                      </li>
+                      
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
             </nav>
-        </header>
+          </header>
+          <!-- Tag menu hamburguer termina aqui -->
 
-    <main class="">
-        <div class="">Quem Somos</div>
-        <article class="">
-            <p class="article__text">
-                Proin pulvinar cursus enim, at varius mi porta eu. Etiam convallis tortor augue, id porta tellus tristique vitae. Proin vel odio eget est bibendum ultrices. Aliquam erat volutpat. Vivamus consequat massa elementum nisi dignissim faucibus. Sed auctor scelerisque sapien, a hendrerit metus condimentum auctor. Donec quis venenatis nibh, vitae hendrerit nibh. Aliquam in turpis tortor. In volutpat vel ante vitae vulputate. Sed consequat, metus vitae bibendum lacinia, velit justo semper metus, sagittis rhoncus nulla ante sit amet ante. Morbi non fringilla tortor, in convallis justo. Fusce vitae metus vel est scelerisque rhoncus. Aenean in dignissim ex. Phasellus eget urna diam.
-            </p>
-            <p>
-                Duis in est magna. Quisque vel odio risus. Nunc tincidunt sem et lectus condimentum, sit amet molestie ante faucibus. Praesent viverra accumsan turpis sit amet imperdiet. Sed ac egestas nunc. Mauris in varius nisi. Phasellus sem ex, semper in commodo sed, dictum eu massa. Morbi convallis enim sit amet erat dignissim ornare. Phasellus ut dictum est, sed pulvinar neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ut interdum urna, vitae ultricies erat. Integer sagittis dignissim lacus sit amet dictum. Praesent nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p>
-                Duis in est magna. Quisque vel odio risus. Nunc tincidunt sem et lectus condimentum, sit amet molestie ante faucibus. Praesent viverra accumsan turpis sit amet imperdiet. Sed ac egestas nunc. Mauris in varius nisi. Phasellus sem ex, semper in commodo sed, dictum eu massa. Morbi convallis enim sit amet erat dignissim ornare. Phasellus ut dictum est, sed pulvinar neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ut interdum urna, vitae ultricies erat. Integer sagittis dignissim lacus sit amet dictum. Praesent nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>                         
-        </article>
-
-    </main>
+          <main class="main">
+            <div class="">
+              <h2>Quem somos</h2>
+            </div>
+         
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card">
+                  <article class="main">
+                    <div class="card-body">
+                      <p class="card-text">Proin pulvinar cursus enim, at varius mi porta eu. Etiam convallis tortor augue, id porta tellus tristique vitae. Proin vel odio eget est bibendum ultrices. Aliquam erat volutpat. Vivamus consequat massa elementum nisi dignissim faucibus. Sed auctor scelerisque sapien, a hendrerit metus condimentum auctor. Donec quis venenatis nibh, vitae hendrerit nibh. Aliquam in turpis tortor. In volutpat vel ante vitae vulputate. Sed consequat, metus vitae bibendum lacinia, velit justo semper metus, sagittis rhoncus nulla ante sit amet ante. Morbi non fringilla tortor, in convallis justo. Fusce vitae metus vel est scelerisque rhoncus. Aenean in dignissim ex. Phasellus eget urna diam.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <article class="main">
+                    <div class="card-body">
+                      <p class="card-text">Duis in est magna. Quisque vel odio risus. Nunc tincidunt sem et lectus condimentum, sit amet molestie ante faucibus. Praesent viverra accumsan turpis sit amet imperdiet. Sed ac egestas nunc. Mauris in varius nisi. Phasellus sem ex, semper in commodo sed, dictum eu massa. Morbi convallis enim sit amet erat dignissim ornare. Phasellus ut dictum est, sed pulvinar neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ut interdum urna, vitae ultricies erat. Integer sagittis dignissim lacus sit amet dictum. Praesent nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <article class="main">
+                    <div class="card-body">
+                      <p class="card-text">Duis in est magna. Quisque vel odio risus. Nunc tincidunt sem et lectus condimentum, sit amet molestie ante faucibus. Praesent viverra accumsan turpis sit amet imperdiet. Sed ac egestas nunc. Mauris in varius nisi. Phasellus sem ex, semper in commodo sed, dictum eu massa. Morbi convallis enim sit amet erat dignissim ornare. Phasellus ut dictum est, sed pulvinar neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ut interdum urna, vitae ultricies erat. Integer sagittis dignissim lacus sit amet dictum. Praesent nec risus sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </main>
 
     <footer class="footer">
-        <p>Site criado pelo grupo Mauro, Rodrigo e Manoel - 2022</p>
+      <p>Site criado pelo grupo Mauro, Rodrigo e Manoel - 2022</p>
     </footer>
-</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -130,7 +130,7 @@
       "section_article section_article section_article"
       "footer footer footer";
     grid-template-columns: 1, 1fr;
-    grid-template-rows: 80px 500px 650px auto;
+    grid-template-rows: auto;
   }
 
   .navbar{
