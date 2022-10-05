@@ -1,12 +1,8 @@
 /* Corpo da página*/
-body{
+main{
   margin-top: 130px;
   margin-left: 15px;
   margin-right: 15px;
-}
-main{
-  /* padding: 10px;
-  font-size: 20px; */
 }
 
 .article__text{
