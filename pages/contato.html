@@ -17,87 +17,91 @@
     <title>Contato</title>
 </head>
 <body>
-    <div id="container__grid">
-    
-        <!-- Tag menu hamburguer começa  aqui -->
-    <header id="container__header">
-        <nav class="navbar navbar-expand-xl fixed-top header__nav">
-          <div class="container-fluid">
-            <h1 class="header__title">Inspcom</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inspcom</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a href="../index.html" class="nav-link active header__nav__link"> Home </a>  
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a href="contato.html" class="nav-link header__nav__link"> Contato </a>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="projetos.html" class="nav-link header__nav__link"> Projetos </a>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="quem_somos.html" class="nav-link header__nav__link"> Quem somos </a>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="servicos.html" class="nav-link header__nav__link"> Serviços </a>
-                  </li>
-                  
-                </ul>
+  
+  <!-- Tag menu hamburguer começa  aqui -->
+  <header id="container__header">
+      <nav class="navbar navbar-expand-xl fixed-top header__nav">
+        <div class="container-fluid">
+          <h1 class="header__title">Inspcom</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inspcom</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a href="../index.html" class="nav-link active header__nav__link"> Home </a>  
+                </li>
                 
-              </div>
+                <li class="nav-item">
+                  <a href="contato.html" class="nav-link header__nav__link"> Contato </a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="projetos.html" class="nav-link header__nav__link"> Projetos </a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="quem_somos.html" class="nav-link header__nav__link"> Quem somos </a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="servicos.html" class="nav-link header__nav__link"> Serviços </a>
+                </li>
+                
+              </ul>
+              
             </div>
           </div>
-        </nav>
-      </header>
-      <!-- Tag menu hamburguer termina aqui -->
-
-        <div class="main__section">
-            Contato
         </div>
+      </nav>
+  </header>
+  <!-- Tag menu hamburguer termina aqui -->
+  
+  
+  <div id="container__grid">
+  
+    <main>
+      <h1>Contato</h1>  
 
-        <div class="form">
-            <form action="GET">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" placeholder="Digite seu nome"><br>
-            <label for="email">e-mail:</label>
-            <input type="email" name="email" placeholder="Digite seu e-mail"><br>
-            <label for="tel">Telefone:</label>
-            <input type="tel" name="tel" placeholder="Telefone"><br><br>
-            <label> Como você deseja ser contactado:</label><br>
-            <label>E-mail:</label>
-            <input type="radio" nome="radContato" value="email">
-            <label>Telefone:</label>
-            <input type="radio" name="radContato" value="telefone"><br>
-            <p>Qual tipo de serviços deseja mais informações:</p>
-            <select name="atividade">
-                <option value="inspecao">Inspeção Técnica</option>
-                <option value="comissionamento">Comissionamento</option>
-            </select><br><br>
-            <label> Deseja receber o Newsletter </label>
-            <input type="checkbox" name="aceita" value="1"><br><br>
-            <label for="comentarios"> Tire suas dúvidas: </label><br>
-            <textarea name="comentarios" id="" cols="30" rows="10"></textarea><br>
-            <input type="reset" value="Limpar Formulário">
-            <input type="submit" value="Enviar Formulário">
-            </form>  
+      <div class="form">
+        <form action="#">
+        <label for="nome">Nome:</label>
+        <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" aria-label="default input example">
+        <label for="email">E-mail:</label>
+        <input class="form-control" type="email" name="email" placeholder="Digite seu e-mail" aria-label="default input example">
+        <label for="tel">Telefone:</label>
+        <input class="form-control" type="tel" name="tel" placeholder="Telefone" aria-label="default input example"><br />
+        <label> Como você deseja ser contactado:</label><br>
+        <label>E-mail:</label>
+        <input type="radio" name="radContato" value="email">
+        <label>Telefone:</label>
+        <input type="radio" name="radContato" value="telefone"><br /><br />
+        <p>Qual tipo de serviços deseja mais informações:
+        <select name="atividade">
+            <option value="inspecao">Inspeção Técnica</option>
+            <option value="comissionamento">Comissionamento</option>
+        </select></p>
+        <label> Deseja receber o Newsletter </label>
+        <input type="checkbox" name="aceita" value="1"><br><br>
+        <div class="mb-3">
+        <label for="comentarios"> Tire suas dúvidas: </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="comentarios" id="" cols="30" rows="5"></textarea>
         </div>
+        <button class="button" type="reset">Limpar Formulário</button>
+        <button class="button" type="submit">Enviar Formulário</button>
+        </form>  
+      </div>
 
-        <footer class="footer">
-            <p>Site criado pelo grupo Mauro, Rodrigo e Manoel - 2022</p>
-        </footer>
-    </div>
+    </main>
+    <footer class="footer">
+        <p>Site criado pelo grupo Mauro, Rodrigo e Manoel - 2022</p>
+    </footer>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
