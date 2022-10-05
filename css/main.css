@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@media screen and (max-width: 780px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Oxygen", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background-color: white; }
+  .navbar {
+    background-color: yellow; }
+    .navbar .offcanvas {
+      background-color: yellow; }
+      .navbar .offcanvas .offcanvas-title {
+        font-family: "Goblin One", Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 35px; }
+  .header__title {
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 2.4em;
+    font-family: "Goblin One", Arial, Helvetica, sans-serif;
+    color: black;
+    text-transform: uppercase;
+    text-align: center; }
+  .header__nav ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 1px solid black; }
+    .header__nav ul li {
+      list-style: none;
+      padding: 5px;
+      text-align: center; }
+      .header__nav ul li .header__nav__link {
+        color: black;
+        text-decoration: none;
+        border-radius: 05px;
+        cursor: pointer; }
+        .header__nav ul li .header__nav__link:hover {
+          background-color: rgba(86, 110, 248, 0.3);
+          transition: .5s ease-in-out; }
+  .section__title {
+    background-image: url(../images/dub.webp);
+    height: 300px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section__title h2 {
+      color: white;
+      font-size: 2.2em;
+      text-align: center;
+      text-shadow: 5px 5px 2px black; }
+  .main__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main__section .article__text {
+      border: 1px solid yellow;
+      background-color: silver;
+      padding: 10px;
+      margin: 10px;
+      width: 315px;
+      border-radius: 25px;
+      box-shadow: 10px 5px 3px; }
+      .main__section .article__text:hover {
+        background-color: #ebebeb; }
+  .footer {
+    background-color: black;
+    height: 80px; }
+    .footer p {
+      padding: 15px;
+      font-family: sans-serif;
+      color: #999;
+      text-align: center; } }
+
+@media screen and (min-width: 779px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Oxygen", Arial, Helvetica, sans-serif; }
+  /* ----- Começo do grid ---- */
+  #container__grid {
+    /* grid PAI*/
+    font-weight: normal;
+    display: grid;
+    grid-template-areas: "nav nav nav" "section_title section_title section_title" "section_article section_article section_article" "footer footer footer";
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: auto; }
+  .navbar {
+    background-color: yellow;
+    margin: 0;
+    padding: 0; }
+  .header__nav {
+    /* grid FILHO */
+    grid-area: nav; }
+    .header__nav ul {
+      display: flex;
+      position: absolute;
+      top: 10px;
+      right: 50px;
+      font-size: 18px;
+      text-transform: uppercase; }
+      .header__nav ul ul li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 15px; }
+  .section__title {
+    /* grid FILHO */
+    grid-area: section_title;
+    background-image: url(../images/architecture.jpg);
+    height: 500px;
+    width: 100vw;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section__title .article__title {
+      padding: 10px;
+      background-color: rgba(59, 60, 65, 0.5);
+      height: 250px; }
+      .section__title .article__title h2 {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+        text-shadow: 5px 5px 2px black; }
+  .section__article {
+    /* grid FILHO */
+    grid-area: section_article;
+    display: flex;
+    justify-content: space-evenly; }
+  .header__title {
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 20px;
+    font-size: 3em;
+    font-family: "Goblin One", Arial, Helvetica, sans-serif;
+    color: black;
+    text-transform: uppercase; }
+  .header__nav__link {
+    color: black;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer; }
+    .header__nav__link:hover {
+      background-color: rgba(86, 110, 248, 0.3);
+      transition: .5s ease-in-out; }
+  .main__article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main__article .article__text {
+      border: 1px solid yellow;
+      background-color: silver;
+      line-height: 1.2;
+      padding: 30px;
+      margin: 15px;
+      width: 400px;
+      border-radius: 25px;
+      box-shadow: 10px 5px 3px;
+      transition: 1s; }
+    .main__article p:hover {
+      background-color: #ebebeb;
+      background: yellow; }
+  /*  Rodapé da página */
+  .footer {
+    /* grid FILHO */
+    grid-area: footer;
+    background-color: black; }
+    .footer p {
+      padding: 15px;
+      font-family: sans-serif;
+      color: #999;
+      text-align: center; } }

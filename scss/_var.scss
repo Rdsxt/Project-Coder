@@ -1,0 +1,36 @@
+// Alterações padrão MOBILE e DESKTOP
+$color1: yellow;
+$color2: white;
+$color3: black;
+$color4:rgb(235, 235, 235);
+
+
+// Alterações para MOBILE
+$fontTitleResp: 2.4em;
+$fontTitleMenuHamb: 35px;
+$fontMenuHamb:1em;
+$fontTitle: 2.2em;
+
+
+// Alterações para DESKTOP
+$fontTitleLogo: 3em;
+$fontMenus: 1em;
+$fontTitleDesk: 5em;
+
+@mixin body{
+  padding: 0;
+  margin: 0;
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+}
+
+@mixin cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@mixin article__text{
+
+}
+
+
