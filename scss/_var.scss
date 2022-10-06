@@ -29,8 +29,33 @@ $fontTitleDesk: 5em;
   justify-content: center;
 }
 
-@mixin article__text{
-
+@mixin menuHamburguer{
+  .navbar{
+    background-color: $color1;
+    #offcanvasNavbar{
+      background-color: $color1;
+    }
+    #offcanvasNavbarLabel{
+      font-size: $fontTitleMenuHamb;
+      text-transform: uppercase;
+      font-family: "Goblin One", Arial, Helvetica, sans-serif;
+    }
+    
+  }
 }
 
+@mixin meuHamb{
+  .offcanvas.offcanvas-end.show{
+    background-color: $color1;
+    h5{
+      font-family: "Goblin One", Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      text-transform: uppercase;  
+    }
+    .navbar-nav{
+      margin-top: 50px;
+      font-size: 24px;
+    }
+  }
 
+}
