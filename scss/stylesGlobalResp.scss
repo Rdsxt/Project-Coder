@@ -88,7 +88,7 @@
 
   .footer{                 
     background-color: $color3;
-    height: 80px;
+    height: 150px;
     width: 100%;
 
     p{
@@ -96,7 +96,12 @@
       font-family: sans-serif;
       color: #999;
       text-align: center;
+      i{
+        margin: 20px 15px 15px;
+        font-size: 40px;
+      }
     }
+    
   }
 
   
@@ -243,6 +248,10 @@
       font-family: sans-serif;
       color: #999;
       text-align: center;
+      i{
+        margin: 20px 15px 15px;
+        font-size: 40px;
+      }
     }
   }
 
